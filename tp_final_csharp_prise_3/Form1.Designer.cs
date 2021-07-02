@@ -124,6 +124,7 @@ namespace tp_final_csharp_prise_3
             this.btn_connexion.TabIndex = 3;
             this.btn_connexion.Text = "Se Connecter";
             this.btn_connexion.UseVisualStyleBackColor = false;
+            this.btn_connexion.Click += new System.EventHandler(this.btn_connexion_Click);
             // 
             // picb_exit
             // 

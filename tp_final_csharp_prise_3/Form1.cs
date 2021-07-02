@@ -24,9 +24,17 @@ namespace tp_final_csharp_prise_3
             DialogResult yesno = MessageBox.Show("Voulez vous quitter le service de donations?", "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (yesno == DialogResult.Yes) this.Close();
         }
-        private void pnlMatchForm(object sender, PaintEventArgs e)
+        private void affichePrincipale()
         {
-            ControlPaint.DrawBorder(e.Graphics, this.panel1.ClientRectangle, Color.DarkBlue, ButtonBorderStyle.Solid);
+            pagePrincipale page_principal = new pagePrincipale();
+            page_principal.Region = this.Region;
+            page_principal.Show();
+            this.Hide();
+        }
+
+        private void btn_connexion_Click(object sender, EventArgs e)
+        {
+            affichePrincipale();
         }
     }
 }

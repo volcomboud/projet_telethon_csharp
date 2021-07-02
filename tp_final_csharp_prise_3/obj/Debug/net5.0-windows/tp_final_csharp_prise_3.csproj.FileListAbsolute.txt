@@ -17,3 +17,5 @@ C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_pris
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.pdb
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.genruntimeconfig.cache
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.login.resources
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.pagePrincipale.resources
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.donateur.resources

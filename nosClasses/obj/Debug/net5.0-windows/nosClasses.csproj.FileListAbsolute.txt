@@ -1,0 +1,12 @@
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\bin\Debug\net5.0-windows\nosClasses.deps.json
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\bin\Debug\net5.0-windows\nosClasses.dll
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\bin\Debug\net5.0-windows\ref\nosClasses.dll
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\bin\Debug\net5.0-windows\nosClasses.pdb
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\obj\Debug\net5.0-windows\nosClasses.csprojAssemblyReference.cache
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\obj\Debug\net5.0-windows\nosClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\obj\Debug\net5.0-windows\nosClasses.AssemblyInfoInputs.cache
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\obj\Debug\net5.0-windows\nosClasses.AssemblyInfo.cs
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\obj\Debug\net5.0-windows\nosClasses.csproj.CoreCompileInputs.cache
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\obj\Debug\net5.0-windows\nosClasses.dll
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\obj\Debug\net5.0-windows\ref\nosClasses.dll
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\nosClasses\obj\Debug\net5.0-windows\nosClasses.pdb
