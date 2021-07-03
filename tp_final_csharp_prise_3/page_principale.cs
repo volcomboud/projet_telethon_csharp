@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 using biblioDonationSys;
 
 
@@ -14,6 +15,7 @@ namespace tp_final_csharp_prise_3
 {
     public partial class pagePrincipale : Form
     {
+        GestionnaireSTE elMaestro = new GestionnaireSTE();
         public pagePrincipale()
         {
             InitializeComponent();
@@ -188,6 +190,130 @@ namespace tp_final_csharp_prise_3
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             tabc_page_princ.SelectedIndex = 3;
+        }
+
+        private void ValiderDonationClick(object sender, EventArgs e)
+        {
+            //====================CHARGEMENT VARIABLE DONATION=============================
+            if (validationDonDon())
+            {
+                string nom = txtb_dona_nom.Text;
+                string prenom = txtb_dona_prenom.Text;
+                string email = txtb_dona_email.Text;
+                string telephone = txtb_dona_phone.Text;
+                string carte = txtb_dona_carte.Text;
+                char type_carte = typeCarte();
+                string date_expiration = dtp_expiration.Text;
+
+
+                Donateur tampon = new Donateur(nom, prenom, email, telephone, type_carte, carte, date_expiration);
+                elMaestro.ajouterDonateur(tampon);
+                //====================CHARGEMENT VARIABLE DON==================================
+                string don_date = dtp_don_date.Text;
+                double montant = montantDon();
+                //=============================================================================
+                Don tamdon = new Don(don_date, tampon.getId(), montant);
+                elMaestro.ajouterDon(tamdon);
+
+                DialogResult succes = MessageBox.Show("Le donateur ainsi que son don on été ajouté",
+                            "Succès", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                if (succes == DialogResult.OK) tabc_page_princ.SelectedIndex = 4;
+            }
+            else
+                MessageBox.Show("batard");
+        }
+        private char typeCarte()
+        {
+            if (rdb_mc.Checked) return 'M';
+            else if (rdb_amex.Checked) return 'A';
+            else return 'V';
+        }
+        private double montantDon()
+        {
+            double tampon;
+            string stringpon = txtb_don_montant.Text;
+            tampon=double.Parse(stringpon);
+            return tampon;
+        }
+        private bool validationDonDon() //Validation pour donateur && don
+        {        
+            if (txtb_dona_nom.Text.Equals(string.Empty))             
+            {
+                MessageBox.Show("Veuillez entrer le nom du donateur", "Champs manquant", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                txtb_dona_nom.BackColor = System.Drawing.Color.BlueViolet;
+                tabc_page_princ.SelectedIndex = 0;
+                return false;
+            }
+
+            if (txtb_dona_prenom.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Veuillez entrer le prénom du donateur", "Champs manquant", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                txtb_dona_prenom.BackColor = System.Drawing.Color.BlueViolet;
+                tabc_page_princ.SelectedIndex = 0;
+                return false;
+            }
+            if (!txtb_dona_email.Text.Equals(string.Empty))
+            {
+                Regex monExpression = new Regex(@"^([\w]+)\@([\D]+)\.([\D]+)$");
+                if (!monExpression.IsMatch(txtb_dona_email.Text))
+                {
+                    MessageBox.Show("Adresse email invalide", "INVALIDE", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                    txtb_dona_email.BackColor = System.Drawing.Color.BlueViolet;
+                    tabc_page_princ.SelectedIndex = 0;
+                    return false;
+                }
+            }
+            if (txtb_dona_phone.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Veuillez entrer le numéro de téléphone du donateur", "Champs manquant", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                txtb_dona_phone.BackColor = System.Drawing.Color.BlueViolet;
+                tabc_page_princ.SelectedIndex = 0;
+                return false;
+            }
+            if (txtb_dona_carte.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Veuillez entrer le numéro de carte du donateur", "Champs manquant", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                txtb_dona_carte.BackColor = System.Drawing.Color.BlueViolet;
+                tabc_page_princ.SelectedIndex = 1;
+                return false;
+            } 
+            if (dtp_expiration.Value.Date<DateTime.Now.Date)
+            {
+                MessageBox.Show("La carte entré est expiré", "Carte Expiré", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                dtp_expiration.BackColor = System.Drawing.Color.BlueViolet;
+                tabc_page_princ.SelectedIndex = 1;
+                return false;
+            }
+            if (dtp_expiration.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Veuillez entrer une date valide", "Champs manquant", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                dtp_expiration.BackColor = System.Drawing.Color.BlueViolet;
+                tabc_page_princ.SelectedIndex = 1;
+                return false;
+            }
+            if (rdb_amex.Checked == false && rdb_mc.Checked == false && rdb_visa.Checked == false)
+            {
+                MessageBox.Show("Veuillez sélectionner le type de carte ", "Champs manquant", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                grb_info_credit.BackColor = System.Drawing.Color.BlueViolet;
+                tabc_page_princ.SelectedIndex = 1;
+                return false;
+            }
+            if (!double.TryParse(txtb_don_montant.Text, out double en))
+            {
+                MessageBox.Show("Assurez vous d'entrer un montant valide ", "Champs manquant", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                txtb_don_montant.BackColor = System.Drawing.Color.BlueViolet;
+                tabc_page_princ.SelectedIndex = 2;
+                return false;
+            }
+            if (dtp_don_date.Text.Equals(string.Empty)|| dtp_don_date.Value.Date < DateTime.Now.Date)
+            {
+                MessageBox.Show("Veuillez entrer une date valide", "Champs manquant", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                dtp_don_date.BackColor = System.Drawing.Color.BlueViolet;
+                tabc_page_princ.SelectedIndex = 2;
+                return false;
+            }
+            return true;
+            
         }
     }
 }

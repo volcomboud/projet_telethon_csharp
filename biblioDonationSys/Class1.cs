@@ -27,6 +27,7 @@ namespace biblioDonationSys
         {
             return this._prenom;
         }
+       abstract public int getId();
     }
    public class Commanditaire : Personne
     {
@@ -44,6 +45,10 @@ namespace biblioDonationSys
             _id_creator++;
             return _id_creator;
         }
+        override public int getId()
+        {
+            return this._id;
+        }
     }
     public class Donateur : Personne
     {
@@ -55,7 +60,7 @@ namespace biblioDonationSys
         protected string _numero_carte;
         protected string _carte_exp;
 
-        Donateur(string nom, string prenom,string email,string telephone,char type_carte,string num_carte,string carte_exp)
+        public Donateur(string nom, string prenom,string email,string telephone,char type_carte,string num_carte,string carte_exp)
         {
             this._email = email;
             this._carte_exp = carte_exp;
@@ -66,7 +71,7 @@ namespace biblioDonationSys
             this._telephone = telephone;
             this._id = idCreator();
         }
-        Donateur(string nom, string prenom, string telephone, char type_carte, string num_carte, string carte_exp)
+        public Donateur(string nom, string prenom, string telephone, char type_carte, string num_carte, string carte_exp)
         {
             this._carte_exp = carte_exp;
             this._nom = nom;
@@ -80,6 +85,10 @@ namespace biblioDonationSys
         {
             _id_creator++;
             return _id_creator;
+        }
+        public override int getId()
+        {
+            return this._id;
         }
     }
     public class Prix
@@ -116,7 +125,7 @@ namespace biblioDonationSys
         protected int _id_donateur;
         protected double _montant;
 
-        Don(string id,string date,int donateur,double montant)
+        public Don(string date,int donateur,double montant)
         {
             this._id = idCreator();
             this._date = date;
@@ -136,19 +145,19 @@ namespace biblioDonationSys
         protected List<Don> tab_don = new List<Don>();
         protected List<Prix> tab_prix = new List<Prix>();
 
-        protected void ajouterSponsor(Commanditaire sponsor)
+        public void ajouterSponsor(Commanditaire sponsor)
         {
             this.tab_sponsor.Add(sponsor);
         }
-        protected void ajouterDonateur(Donateur donateur)
+        public void ajouterDonateur(Donateur donateur)
         {
             this.tab_donateurs.Add(donateur);
         }
-        protected void ajouterPrix(Prix prix)
+        public void ajouterPrix(Prix prix)
         {
             this.tab_prix.Add(prix);
         }
-        protected void ajouterDon(Don don)
+        public void ajouterDon(Don don)
         {
             this.tab_don.Add(don);
         }
