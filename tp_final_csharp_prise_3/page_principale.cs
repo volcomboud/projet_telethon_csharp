@@ -184,5 +184,10 @@ namespace tp_final_csharp_prise_3
         {
             tabc_page_princ.SelectedIndex = 8;
         }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 3;
+        }
     }
 }

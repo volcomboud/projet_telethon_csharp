@@ -1477,6 +1477,7 @@ namespace tp_final_csharp_prise_3
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 37;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // textBox10
             // 
@@ -2035,9 +2036,10 @@ namespace tp_final_csharp_prise_3
             this.Controls.Add(this.tabc_page_princ);
             this.Controls.Add(this.pnl_pp_left);
             this.Controls.Add(this.pnl_pp_top);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "pagePrincipale";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Service de donation";
             this.Load += new System.EventHandler(this.pagePrincipale_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picb_exit)).EndInit();
