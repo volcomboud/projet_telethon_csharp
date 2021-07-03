@@ -22,7 +22,7 @@ namespace tp_final_csharp_prise_3
         private void picb_exit_Click(object sender, EventArgs e)
         {
             DialogResult yesno = MessageBox.Show("Voulez vous quitter le service de donations?", "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (yesno == DialogResult.Yes) this.Close();
+            if (yesno == DialogResult.Yes) Application.Exit();
         }
         private void affichePrincipale()
         {

@@ -19,25 +19,23 @@ namespace tp_final_csharp_prise_3
         {
             InitializeComponent();
             cacherTabs();
+            tabc_page_princ.SelectedIndex = 4;
         }
 
         private void picb_exit_Click(object sender, EventArgs e)
         {
-                DialogResult yesno = MessageBox.Show("Voulez vous quitter le service de donations?", "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (yesno == DialogResult.Yes) this.Close();            
+            DialogResult yesno = MessageBox.Show("Voulez vous quitter le service de donations?", "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (yesno == DialogResult.Yes) Application.Exit();            
         }
 
         private void btn_log_out_Click(object sender, EventArgs e)
         {
-            login page_connection = new login();
-            page_connection.Region = this.Region;
-            page_connection.Show();
-            this.Hide();
+            
         }
 
         private void btn_ajout_donateur_Click(object sender, EventArgs e)
         {
-            tabc_page_princ.SelectedIndex = 0;
+            
         }
 
         private void pagePrincipale_Load(object sender, EventArgs e)
@@ -72,6 +70,29 @@ namespace tp_final_csharp_prise_3
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_donateur_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 0;
+        }
+
+        private void btn_ajout_commanditaire_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            login page_connection = new login();
+            page_connection.Region = this.Region;
+            page_connection.Show();
+            this.Hide();
+        }
+
+        private void btn_acceuil_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 4;
         }
     }
 }

@@ -37,9 +37,14 @@ namespace tp_final_csharp_prise_3
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_pp_left = new System.Windows.Forms.Panel();
-            this.btn_log_out = new System.Windows.Forms.Button();
-            this.btn_ajout_commanditaire = new System.Windows.Forms.Button();
-            this.btn_ajout_donateur = new System.Windows.Forms.Button();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.btn_acceuil = new System.Windows.Forms.Button();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.btn_logout = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_donateur = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -105,6 +110,10 @@ namespace tp_final_csharp_prise_3
             this.lbl_id = new System.Windows.Forms.Label();
             this.lbl_info_donateur = new System.Windows.Forms.Label();
             this.tabc_page_princ = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.panel14 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picb_exit)).BeginInit();
             this.pnl_pp_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -141,6 +150,8 @@ namespace tp_final_csharp_prise_3
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_next)).BeginInit();
             this.tabc_page_princ.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // picb_exit
@@ -207,60 +218,130 @@ namespace tp_final_csharp_prise_3
             // pnl_pp_left
             // 
             this.pnl_pp_left.BackColor = System.Drawing.Color.White;
+            this.pnl_pp_left.Controls.Add(this.panel18);
+            this.pnl_pp_left.Controls.Add(this.btn_acceuil);
+            this.pnl_pp_left.Controls.Add(this.panel17);
+            this.pnl_pp_left.Controls.Add(this.panel16);
+            this.pnl_pp_left.Controls.Add(this.panel15);
+            this.pnl_pp_left.Controls.Add(this.btn_logout);
+            this.pnl_pp_left.Controls.Add(this.button1);
+            this.pnl_pp_left.Controls.Add(this.btn_donateur);
             this.pnl_pp_left.Controls.Add(this.picb_exit);
-            this.pnl_pp_left.Controls.Add(this.btn_log_out);
-            this.pnl_pp_left.Controls.Add(this.btn_ajout_commanditaire);
-            this.pnl_pp_left.Controls.Add(this.btn_ajout_donateur);
             this.pnl_pp_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_pp_left.Location = new System.Drawing.Point(0, 107);
             this.pnl_pp_left.Name = "pnl_pp_left";
-            this.pnl_pp_left.Size = new System.Drawing.Size(185, 581);
+            this.pnl_pp_left.Size = new System.Drawing.Size(203, 581);
             this.pnl_pp_left.TabIndex = 2;
             // 
-            // btn_log_out
+            // panel18
             // 
-            this.btn_log_out.BackColor = System.Drawing.Color.Aqua;
-            this.btn_log_out.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_log_out.ForeColor = System.Drawing.Color.Navy;
-            this.btn_log_out.Location = new System.Drawing.Point(13, 413);
-            this.btn_log_out.Name = "btn_log_out";
-            this.btn_log_out.Size = new System.Drawing.Size(160, 34);
-            this.btn_log_out.TabIndex = 2;
-            this.btn_log_out.Text = "Déconnection";
-            this.btn_log_out.UseVisualStyleBackColor = false;
-            this.btn_log_out.Click += new System.EventHandler(this.btn_log_out_Click);
+            this.panel18.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel18.Location = new System.Drawing.Point(8, 76);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(195, 10);
+            this.panel18.TabIndex = 28;
             // 
-            // btn_ajout_commanditaire
+            // btn_acceuil
             // 
-            this.btn_ajout_commanditaire.BackColor = System.Drawing.Color.Aqua;
-            this.btn_ajout_commanditaire.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_ajout_commanditaire.ForeColor = System.Drawing.Color.Navy;
-            this.btn_ajout_commanditaire.Location = new System.Drawing.Point(13, 144);
-            this.btn_ajout_commanditaire.Name = "btn_ajout_commanditaire";
-            this.btn_ajout_commanditaire.Size = new System.Drawing.Size(160, 34);
-            this.btn_ajout_commanditaire.TabIndex = 1;
-            this.btn_ajout_commanditaire.Text = "Commanditaire";
-            this.btn_ajout_commanditaire.UseVisualStyleBackColor = false;
+            this.btn_acceuil.BackColor = System.Drawing.SystemColors.Window;
+            this.btn_acceuil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_acceuil.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.btn_acceuil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.btn_acceuil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
+            this.btn_acceuil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_acceuil.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_acceuil.ForeColor = System.Drawing.Color.Navy;
+            this.btn_acceuil.Location = new System.Drawing.Point(6, 6);
+            this.btn_acceuil.Name = "btn_acceuil";
+            this.btn_acceuil.Size = new System.Drawing.Size(195, 64);
+            this.btn_acceuil.TabIndex = 29;
+            this.btn_acceuil.Text = "Accueil";
+            this.btn_acceuil.UseVisualStyleBackColor = false;
+            this.btn_acceuil.Click += new System.EventHandler(this.btn_acceuil_Click);
             // 
-            // btn_ajout_donateur
+            // panel17
             // 
-            this.btn_ajout_donateur.BackColor = System.Drawing.Color.Aqua;
-            this.btn_ajout_donateur.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_ajout_donateur.ForeColor = System.Drawing.Color.Navy;
-            this.btn_ajout_donateur.Location = new System.Drawing.Point(13, 55);
-            this.btn_ajout_donateur.Name = "btn_ajout_donateur";
-            this.btn_ajout_donateur.Size = new System.Drawing.Size(160, 34);
-            this.btn_ajout_donateur.TabIndex = 0;
-            this.btn_ajout_donateur.Text = "Donateur";
-            this.btn_ajout_donateur.UseVisualStyleBackColor = false;
-            this.btn_ajout_donateur.Click += new System.EventHandler(this.btn_ajout_donateur_Click);
+            this.panel17.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel17.Location = new System.Drawing.Point(6, 482);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(195, 10);
+            this.panel17.TabIndex = 28;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.Aqua;
+            this.panel16.Location = new System.Drawing.Point(6, 220);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(195, 10);
+            this.panel16.TabIndex = 28;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel15.Location = new System.Drawing.Point(6, 402);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(195, 10);
+            this.panel15.TabIndex = 27;
+            // 
+            // btn_logout
+            // 
+            this.btn_logout.BackColor = System.Drawing.SystemColors.Window;
+            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_logout.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.btn_logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.btn_logout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_logout.ForeColor = System.Drawing.Color.Navy;
+            this.btn_logout.Location = new System.Drawing.Point(6, 418);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(195, 58);
+            this.btn_logout.TabIndex = 26;
+            this.btn_logout.Text = "Déconnexion";
+            this.btn_logout.UseVisualStyleBackColor = false;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Navy;
+            this.button1.Location = new System.Drawing.Point(6, 237);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(195, 64);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Commanditaire";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btn_donateur
+            // 
+            this.btn_donateur.BackColor = System.Drawing.SystemColors.Window;
+            this.btn_donateur.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_donateur.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.btn_donateur.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.btn_donateur.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
+            this.btn_donateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_donateur.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_donateur.ForeColor = System.Drawing.Color.Navy;
+            this.btn_donateur.Location = new System.Drawing.Point(6, 150);
+            this.btn_donateur.Name = "btn_donateur";
+            this.btn_donateur.Size = new System.Drawing.Size(195, 64);
+            this.btn_donateur.TabIndex = 24;
+            this.btn_donateur.Text = "Donateur";
+            this.btn_donateur.UseVisualStyleBackColor = false;
+            this.btn_donateur.Click += new System.EventHandler(this.btn_donateur_Click);
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.panel4);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1043, 543);
+            this.tabPage3.Size = new System.Drawing.Size(1025, 543);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "don_id";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -464,7 +545,7 @@ namespace tp_final_csharp_prise_3
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1043, 543);
+            this.tabPage2.Size = new System.Drawing.Size(1025, 543);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "credit_id";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -727,7 +808,7 @@ namespace tp_final_csharp_prise_3
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1043, 543);
+            this.tabPage1.Size = new System.Drawing.Size(1025, 543);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "donation_id";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -936,14 +1017,52 @@ namespace tp_final_csharp_prise_3
             this.tabc_page_princ.Controls.Add(this.tabPage1);
             this.tabc_page_princ.Controls.Add(this.tabPage2);
             this.tabc_page_princ.Controls.Add(this.tabPage3);
+            this.tabc_page_princ.Controls.Add(this.tabPage4);
+            this.tabc_page_princ.Controls.Add(this.tabPage5);
             this.tabc_page_princ.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabc_page_princ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabc_page_princ.Location = new System.Drawing.Point(185, 107);
+            this.tabc_page_princ.Location = new System.Drawing.Point(203, 107);
             this.tabc_page_princ.Name = "tabc_page_princ";
             this.tabc_page_princ.SelectedIndex = 0;
-            this.tabc_page_princ.Size = new System.Drawing.Size(1051, 581);
+            this.tabc_page_princ.Size = new System.Drawing.Size(1033, 581);
             this.tabc_page_princ.TabIndex = 3;
             this.tabc_page_princ.Click += new System.EventHandler(this.picb_next_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panel13);
+            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1025, 543);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "commanditaire_id";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Aqua;
+            this.panel13.Location = new System.Drawing.Point(-1, -1);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(1045, 544);
+            this.panel13.TabIndex = 2;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.panel14);
+            this.tabPage5.Location = new System.Drawing.Point(4, 34);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1025, 543);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "ecran_principal";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.Aqua;
+            this.panel14.Location = new System.Drawing.Point(-1, -1);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1045, 544);
+            this.panel14.TabIndex = 3;
             // 
             // pagePrincipale
             // 
@@ -1003,6 +1122,8 @@ namespace tp_final_csharp_prise_3
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_next)).EndInit();
             this.tabc_page_princ.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1014,10 +1135,7 @@ namespace tp_final_csharp_prise_3
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btn_ajout_commanditaire;
-        private System.Windows.Forms.Button btn_ajout_donateur;
         private System.Windows.Forms.PictureBox picb_exit;
-        private System.Windows.Forms.Button btn_log_out;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel9;
@@ -1083,5 +1201,17 @@ namespace tp_final_csharp_prise_3
         private System.Windows.Forms.Label lbl_id;
         private System.Windows.Forms.Label lbl_info_donateur;
         private System.Windows.Forms.TabControl tabc_page_princ;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_donateur;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Button btn_logout;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Button btn_acceuil;
     }
 }
