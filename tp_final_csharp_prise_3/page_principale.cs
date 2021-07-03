@@ -14,7 +14,6 @@ namespace tp_final_csharp_prise_3
 {
     public partial class pagePrincipale : Form
     {
-        Control ctrl;
         public pagePrincipale()
         {
             InitializeComponent();
@@ -93,6 +92,97 @@ namespace tp_final_csharp_prise_3
         private void btn_acceuil_Click(object sender, EventArgs e)
         {
             tabc_page_princ.SelectedIndex = 4;
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 4;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 6;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 7;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 8;
+        }
+
+        private void picb_close_donneur_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 4;
+        }
+
+        private void picb_close_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 4;
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_prenom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_phone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_email_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_nom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_id_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox13_Click_1(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 5;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 3;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 7;
+        }
+
+        private void btn_afficher_prix_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 6;
+
+        }
+
+        private void btn_afficher_sponsor_Click(object sender, EventArgs e)
+        {
+            tabc_page_princ.SelectedIndex = 8;
         }
     }
 }
