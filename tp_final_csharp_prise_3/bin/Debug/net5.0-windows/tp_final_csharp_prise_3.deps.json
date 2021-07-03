@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "tp_final_csharp_prise_3/1.0.0": {
+        "dependencies": {
+          "biblioDonationSys": "1.0.0"
+        },
         "runtime": {
           "tp_final_csharp_prise_3.dll": {}
+        }
+      },
+      "biblioDonationSys/1.0.0": {
+        "runtime": {
+          "biblioDonationSys.dll": {}
         }
       }
     }
   },
   "libraries": {
     "tp_final_csharp_prise_3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "biblioDonationSys/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

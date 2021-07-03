@@ -1,0 +1,11 @@
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\bin\Debug\net5.0-windows\biblioDonationSys.deps.json
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\bin\Debug\net5.0-windows\biblioDonationSys.dll
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\bin\Debug\net5.0-windows\ref\biblioDonationSys.dll
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\bin\Debug\net5.0-windows\biblioDonationSys.pdb
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\obj\Debug\net5.0-windows\biblioDonationSys.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\obj\Debug\net5.0-windows\biblioDonationSys.AssemblyInfoInputs.cache
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\obj\Debug\net5.0-windows\biblioDonationSys.AssemblyInfo.cs
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\obj\Debug\net5.0-windows\biblioDonationSys.csproj.CoreCompileInputs.cache
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\obj\Debug\net5.0-windows\biblioDonationSys.dll
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\obj\Debug\net5.0-windows\ref\biblioDonationSys.dll
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\biblioDonationSys\obj\Debug\net5.0-windows\biblioDonationSys.pdb

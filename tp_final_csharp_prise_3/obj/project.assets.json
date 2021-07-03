@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "biblioDonationSys/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/biblioDonationSys.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/biblioDonationSys.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "biblioDonationSys/1.0.0": {
+      "type": "project",
+      "path": "../biblioDonationSys/biblioDonationSys.csproj",
+      "msbuildProject": "../biblioDonationSys/biblioDonationSys.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "biblioDonationSys >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Thinky Winkie\\.nuget\\packages\\": {},
@@ -38,7 +60,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Thinky Winkie\\source\\repos\\tp_final_csharp_prise_3\\biblioDonationSys\\biblioDonationSys.csproj": {
+              "projectPath": "C:\\Users\\Thinky Winkie\\source\\repos\\tp_final_csharp_prise_3\\biblioDonationSys\\biblioDonationSys.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -68,7 +94,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

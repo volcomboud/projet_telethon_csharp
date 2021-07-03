@@ -31,6 +31,7 @@ namespace tp_final_csharp_prise_3
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(donateur));
             this.pnl_pp_bot = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lbl_don_prog = new System.Windows.Forms.Label();
             this.lbl_credit_prog = new System.Windows.Forms.Label();
@@ -46,17 +47,12 @@ namespace tp_final_csharp_prise_3
             this.btn_log_out = new System.Windows.Forms.Button();
             this.btn_ajout_commanditaire = new System.Windows.Forms.Button();
             this.lbl_info_donateur = new System.Windows.Forms.Label();
-            this.lbl_id = new System.Windows.Forms.Label();
-            this.lbl_nom = new System.Windows.Forms.Label();
-            this.lbl_email = new System.Windows.Forms.Label();
-            this.lbl_phone = new System.Windows.Forms.Label();
-            this.lbl_prenom = new System.Windows.Forms.Label();
-            this.txtb_phone = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.picb_next = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.picb_placeholder = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pnl_pp_bot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_progress)).BeginInit();
@@ -65,12 +61,15 @@ namespace tp_final_csharp_prise_3
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_pp_left.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_next)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_placeholder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_pp_bot
             // 
             this.pnl_pp_bot.BackColor = System.Drawing.Color.White;
+            this.pnl_pp_bot.Controls.Add(this.panel3);
             this.pnl_pp_bot.Controls.Add(this.pictureBox3);
             this.pnl_pp_bot.Controls.Add(this.lbl_don_prog);
             this.pnl_pp_bot.Controls.Add(this.lbl_credit_prog);
@@ -82,6 +81,13 @@ namespace tp_final_csharp_prise_3
             this.pnl_pp_bot.Name = "pnl_pp_bot";
             this.pnl_pp_bot.Size = new System.Drawing.Size(1236, 114);
             this.pnl_pp_bot.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(300, 150);
+            this.panel3.TabIndex = 13;
             // 
             // pictureBox3
             // 
@@ -241,95 +247,68 @@ namespace tp_final_csharp_prise_3
             this.lbl_info_donateur.TabIndex = 3;
             this.lbl_info_donateur.Text = "Information du Donateur";
             // 
-            // lbl_id
+            // panel4
             // 
-            this.lbl_id.AutoSize = true;
-            this.lbl_id.Location = new System.Drawing.Point(478, 242);
-            this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(37, 25);
-            this.lbl_id.TabIndex = 4;
-            this.lbl_id.Text = "Id :";
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.picb_placeholder);
+            this.panel4.Controls.Add(this.pictureBox11);
+            this.panel4.Location = new System.Drawing.Point(483, 364);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(569, 105);
+            this.panel4.TabIndex = 4;
             // 
-            // lbl_nom
+            // label6
             // 
-            this.lbl_nom.AutoSize = true;
-            this.lbl_nom.Location = new System.Drawing.Point(478, 283);
-            this.lbl_nom.Name = "lbl_nom";
-            this.lbl_nom.Size = new System.Drawing.Size(61, 25);
-            this.lbl_nom.TabIndex = 5;
-            this.lbl_nom.Text = "Nom :";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(505, 63);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 42);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Don";
             // 
-            // lbl_email
+            // label8
             // 
-            this.lbl_email.AutoSize = true;
-            this.lbl_email.Location = new System.Drawing.Point(478, 370);
-            this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(68, 25);
-            this.lbl_email.TabIndex = 6;
-            this.lbl_email.Text = "Email : ";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(-6, 63);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 42);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Info";
             // 
-            // lbl_phone
+            // label7
             // 
-            this.lbl_phone.AutoSize = true;
-            this.lbl_phone.Location = new System.Drawing.Point(478, 416);
-            this.lbl_phone.Name = "lbl_phone";
-            this.lbl_phone.Size = new System.Drawing.Size(101, 25);
-            this.lbl_phone.TabIndex = 7;
-            this.lbl_phone.Text = "Téléphone :";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(227, 63);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 42);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Paiement";
             // 
-            // lbl_prenom
+            // picb_placeholder
             // 
-            this.lbl_prenom.AutoSize = true;
-            this.lbl_prenom.Location = new System.Drawing.Point(478, 331);
-            this.lbl_prenom.Name = "lbl_prenom";
-            this.lbl_prenom.Size = new System.Drawing.Size(83, 25);
-            this.lbl_prenom.TabIndex = 8;
-            this.lbl_prenom.Text = "Prénom :";
+            this.picb_placeholder.Image = global::tp_final_csharp_prise_3.Properties.Resources.placeholder1;
+            this.picb_placeholder.Location = new System.Drawing.Point(529, 0);
+            this.picb_placeholder.Name = "picb_placeholder";
+            this.picb_placeholder.Size = new System.Drawing.Size(38, 35);
+            this.picb_placeholder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb_placeholder.TabIndex = 24;
+            this.picb_placeholder.TabStop = false;
             // 
-            // txtb_phone
+            // pictureBox11
             // 
-            this.txtb_phone.Location = new System.Drawing.Point(596, 413);
-            this.txtb_phone.Name = "txtb_phone";
-            this.txtb_phone.Size = new System.Drawing.Size(162, 31);
-            this.txtb_phone.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(596, 370);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 31);
-            this.textBox1.TabIndex = 10;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(596, 331);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 31);
-            this.textBox2.TabIndex = 11;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(596, 283);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 31);
-            this.textBox3.TabIndex = 12;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(596, 242);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 31);
-            this.textBox4.TabIndex = 13;
-            // 
-            // picb_next
-            // 
-            this.picb_next.Image = global::tp_final_csharp_prise_3.Properties.Resources.right_arrow;
-            this.picb_next.Location = new System.Drawing.Point(919, 313);
-            this.picb_next.Name = "picb_next";
-            this.picb_next.Size = new System.Drawing.Size(84, 88);
-            this.picb_next.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picb_next.TabIndex = 14;
-            this.picb_next.TabStop = false;
+            this.pictureBox11.Image = global::tp_final_csharp_prise_3.Properties.Resources.etape_1;
+            this.pictureBox11.Location = new System.Drawing.Point(-21, 13);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(611, 75);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 20;
+            this.pictureBox11.TabStop = false;
             // 
             // donateur
             // 
@@ -337,17 +316,7 @@ namespace tp_final_csharp_prise_3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(1236, 688);
-            this.Controls.Add(this.picb_next);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txtb_phone);
-            this.Controls.Add(this.lbl_prenom);
-            this.Controls.Add(this.lbl_phone);
-            this.Controls.Add(this.lbl_email);
-            this.Controls.Add(this.lbl_nom);
-            this.Controls.Add(this.lbl_id);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.lbl_info_donateur);
             this.Controls.Add(this.pnl_pp_left);
             this.Controls.Add(this.pnl_pp_top);
@@ -365,7 +334,10 @@ namespace tp_final_csharp_prise_3
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_pp_left.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picb_next)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_placeholder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,21 +356,17 @@ namespace tp_final_csharp_prise_3
         private System.Windows.Forms.PictureBox picb_exit;
         private System.Windows.Forms.Button btn_log_out;
         private System.Windows.Forms.Label lbl_info_donateur;
-        private System.Windows.Forms.Label lbl_id;
-        private System.Windows.Forms.Label lbl_nom;
-        private System.Windows.Forms.Label lbl_email;
-        private System.Windows.Forms.Label lbl_phone;
-        private System.Windows.Forms.Label lbl_prenom;
-        private System.Windows.Forms.TextBox txtb_phone;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.PictureBox picb_next;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lbl_don_prog;
         private System.Windows.Forms.Label lbl_credit_prog;
         private System.Windows.Forms.Label lbl_info_prog;
         private System.Windows.Forms.PictureBox picb_progress;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox picb_placeholder;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

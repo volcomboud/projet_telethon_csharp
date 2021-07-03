@@ -5,7 +5,6 @@ C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_pris
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\bin\Debug\net5.0-windows\tp_final_csharp_prise_3.dll
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\bin\Debug\net5.0-windows\ref\tp_final_csharp_prise_3.dll
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\bin\Debug\net5.0-windows\tp_final_csharp_prise_3.pdb
-C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.csprojAssemblyReference.cache
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.Properties.Resources.resources
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.csproj.GenerateResource.cache
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.GeneratedMSBuildEditorConfig.editorconfig
@@ -19,3 +18,9 @@ C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_pris
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.login.resources
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.pagePrincipale.resources
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.donateur.resources
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.donateurThree.resources
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.donateurTwo.resources
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.csproj.AssemblyReference.cache
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\bin\Debug\net5.0-windows\biblioDonationSys.dll
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\bin\Debug\net5.0-windows\biblioDonationSys.pdb
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.csproj.CopyComplete
