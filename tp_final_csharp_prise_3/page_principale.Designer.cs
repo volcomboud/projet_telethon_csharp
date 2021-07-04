@@ -59,6 +59,9 @@ namespace tp_final_csharp_prise_3
             this.btn_valider_donation = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbl_don_id = new System.Windows.Forms.Label();
+            this.cmbb_don_id = new System.Windows.Forms.ComboBox();
+            this.dtp_don_date = new System.Windows.Forms.DateTimePicker();
             this.txtb_don_montant = new System.Windows.Forms.TextBox();
             this.lbl_montant = new System.Windows.Forms.Label();
             this.lbl_don_date = new System.Windows.Forms.Label();
@@ -90,6 +93,7 @@ namespace tp_final_csharp_prise_3
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.pnl_centre_tab1 = new System.Windows.Forms.Panel();
+            this.cmbb_dona_id = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -98,7 +102,6 @@ namespace tp_final_csharp_prise_3
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.picb_next = new System.Windows.Forms.PictureBox();
-            this.txtb_dona_id = new System.Windows.Forms.TextBox();
             this.txtb_dona_nom = new System.Windows.Forms.TextBox();
             this.txtb_dona_prenom = new System.Windows.Forms.TextBox();
             this.txtb_dona_email = new System.Windows.Forms.TextBox();
@@ -112,9 +115,9 @@ namespace tp_final_csharp_prise_3
             this.tabc_page_princ = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.cmbb_sponsor_id = new System.Windows.Forms.ComboBox();
+            this.txtb_sponsor_nom = new System.Windows.Forms.TextBox();
+            this.txtb_sponsor_prenom = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -133,13 +136,13 @@ namespace tp_final_csharp_prise_3
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.cmbb_prix_id = new System.Windows.Forms.ComboBox();
             this.panel52 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_valider_sponsor_Prix = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtb_prix_desc = new System.Windows.Forms.TextBox();
+            this.txtb_prix_valeur = new System.Windows.Forms.TextBox();
+            this.txtb_prix_qte = new System.Windows.Forms.TextBox();
             this.lbl_valeur = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.lbl_desc = new System.Windows.Forms.Label();
@@ -188,7 +191,6 @@ namespace tp_final_csharp_prise_3
             this.button11 = new System.Windows.Forms.Button();
             this.panel50 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.dtp_don_date = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.picb_exit)).BeginInit();
             this.pnl_pp_top.SuspendLayout();
             this.pnl_coin.SuspendLayout();
@@ -597,6 +599,8 @@ namespace tp_final_csharp_prise_3
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Aqua;
+            this.groupBox1.Controls.Add(this.lbl_don_id);
+            this.groupBox1.Controls.Add(this.cmbb_don_id);
             this.groupBox1.Controls.Add(this.dtp_don_date);
             this.groupBox1.Controls.Add(this.txtb_don_montant);
             this.groupBox1.Controls.Add(this.lbl_montant);
@@ -609,12 +613,41 @@ namespace tp_final_csharp_prise_3
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Donation";
             // 
+            // lbl_don_id
+            // 
+            this.lbl_don_id.AutoSize = true;
+            this.lbl_don_id.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_don_id.Location = new System.Drawing.Point(65, 202);
+            this.lbl_don_id.Name = "lbl_don_id";
+            this.lbl_don_id.Size = new System.Drawing.Size(40, 21);
+            this.lbl_don_id.TabIndex = 38;
+            this.lbl_don_id.Text = "Id :";
+            // 
+            // cmbb_don_id
+            // 
+            this.cmbb_don_id.Enabled = false;
+            this.cmbb_don_id.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cmbb_don_id.FormattingEnabled = true;
+            this.cmbb_don_id.Location = new System.Drawing.Point(174, 196);
+            this.cmbb_don_id.Name = "cmbb_don_id";
+            this.cmbb_don_id.Size = new System.Drawing.Size(150, 33);
+            this.cmbb_don_id.TabIndex = 37;
+            // 
+            // dtp_don_date
+            // 
+            this.dtp_don_date.Location = new System.Drawing.Point(174, 67);
+            this.dtp_don_date.Name = "dtp_don_date";
+            this.dtp_don_date.Size = new System.Drawing.Size(300, 42);
+            this.dtp_don_date.TabIndex = 4;
+            this.dtp_don_date.ValueChanged += new System.EventHandler(this.dtp_don_date_ValueChanged);
+            // 
             // txtb_don_montant
             // 
             this.txtb_don_montant.Location = new System.Drawing.Point(174, 130);
             this.txtb_don_montant.Name = "txtb_don_montant";
             this.txtb_don_montant.Size = new System.Drawing.Size(150, 42);
             this.txtb_don_montant.TabIndex = 3;
+            this.txtb_don_montant.TextChanged += new System.EventHandler(this.txtb_don_montant_TextChanged);
             // 
             // lbl_montant
             // 
@@ -803,6 +836,7 @@ namespace tp_final_csharp_prise_3
             this.dtp_expiration.Name = "dtp_expiration";
             this.dtp_expiration.Size = new System.Drawing.Size(300, 29);
             this.dtp_expiration.TabIndex = 8;
+            this.dtp_expiration.ValueChanged += new System.EventHandler(this.dtp_expiration_ValueChanged);
             // 
             // txtb_dona_carte
             // 
@@ -810,6 +844,7 @@ namespace tp_final_csharp_prise_3
             this.txtb_dona_carte.Name = "txtb_dona_carte";
             this.txtb_dona_carte.Size = new System.Drawing.Size(190, 42);
             this.txtb_dona_carte.TabIndex = 7;
+            this.txtb_dona_carte.TextChanged += new System.EventHandler(this.txtb_dona_carte_TextChanged);
             // 
             // lbl_num
             // 
@@ -862,6 +897,7 @@ namespace tp_final_csharp_prise_3
             this.rdb_amex.TabStop = true;
             this.rdb_amex.Text = "Amex";
             this.rdb_amex.UseVisualStyleBackColor = true;
+            this.rdb_amex.CheckedChanged += new System.EventHandler(this.rdb_amex_CheckedChanged);
             // 
             // rdb_mc
             // 
@@ -874,6 +910,7 @@ namespace tp_final_csharp_prise_3
             this.rdb_mc.TabStop = true;
             this.rdb_mc.Text = "MasterCard";
             this.rdb_mc.UseVisualStyleBackColor = true;
+            this.rdb_mc.CheckedChanged += new System.EventHandler(this.rdb_mc_CheckedChanged);
             // 
             // rdb_visa
             // 
@@ -886,6 +923,7 @@ namespace tp_final_csharp_prise_3
             this.rdb_visa.TabStop = true;
             this.rdb_visa.Text = "Visa";
             this.rdb_visa.UseVisualStyleBackColor = true;
+            this.rdb_visa.CheckedChanged += new System.EventHandler(this.rdb_visa_CheckedChanged);
             // 
             // picb_previous
             // 
@@ -936,9 +974,9 @@ namespace tp_final_csharp_prise_3
             // pnl_centre_tab1
             // 
             this.pnl_centre_tab1.BackColor = System.Drawing.Color.Aqua;
+            this.pnl_centre_tab1.Controls.Add(this.cmbb_dona_id);
             this.pnl_centre_tab1.Controls.Add(this.panel7);
             this.pnl_centre_tab1.Controls.Add(this.picb_next);
-            this.pnl_centre_tab1.Controls.Add(this.txtb_dona_id);
             this.pnl_centre_tab1.Controls.Add(this.txtb_dona_nom);
             this.pnl_centre_tab1.Controls.Add(this.txtb_dona_prenom);
             this.pnl_centre_tab1.Controls.Add(this.txtb_dona_email);
@@ -954,6 +992,15 @@ namespace tp_final_csharp_prise_3
             this.pnl_centre_tab1.Name = "pnl_centre_tab1";
             this.pnl_centre_tab1.Size = new System.Drawing.Size(1045, 542);
             this.pnl_centre_tab1.TabIndex = 0;
+            // 
+            // cmbb_dona_id
+            // 
+            this.cmbb_dona_id.Enabled = false;
+            this.cmbb_dona_id.FormattingEnabled = true;
+            this.cmbb_dona_id.Location = new System.Drawing.Point(423, 166);
+            this.cmbb_dona_id.Name = "cmbb_dona_id";
+            this.cmbb_dona_id.Size = new System.Drawing.Size(162, 33);
+            this.cmbb_dona_id.TabIndex = 28;
             // 
             // panel7
             // 
@@ -1041,26 +1088,21 @@ namespace tp_final_csharp_prise_3
             this.picb_next.TabStop = false;
             this.picb_next.Click += new System.EventHandler(this.picb_next_Click);
             // 
-            // txtb_dona_id
-            // 
-            this.txtb_dona_id.Location = new System.Drawing.Point(423, 171);
-            this.txtb_dona_id.Name = "txtb_dona_id";
-            this.txtb_dona_id.Size = new System.Drawing.Size(162, 31);
-            this.txtb_dona_id.TabIndex = 25;
-            // 
             // txtb_dona_nom
             // 
             this.txtb_dona_nom.Location = new System.Drawing.Point(423, 212);
             this.txtb_dona_nom.Name = "txtb_dona_nom";
             this.txtb_dona_nom.Size = new System.Drawing.Size(162, 31);
-            this.txtb_dona_nom.TabIndex = 24;
+            this.txtb_dona_nom.TabIndex = 1;
+            this.txtb_dona_nom.TextChanged += new System.EventHandler(this.txtb_dona_nom_TextChanged);
             // 
             // txtb_dona_prenom
             // 
             this.txtb_dona_prenom.Location = new System.Drawing.Point(423, 260);
             this.txtb_dona_prenom.Name = "txtb_dona_prenom";
             this.txtb_dona_prenom.Size = new System.Drawing.Size(162, 31);
-            this.txtb_dona_prenom.TabIndex = 23;
+            this.txtb_dona_prenom.TabIndex = 2;
+            this.txtb_dona_prenom.TextChanged += new System.EventHandler(this.txtb_dona_prenom_TextChanged);
             // 
             // txtb_dona_email
             // 
@@ -1068,6 +1110,7 @@ namespace tp_final_csharp_prise_3
             this.txtb_dona_email.Name = "txtb_dona_email";
             this.txtb_dona_email.Size = new System.Drawing.Size(162, 31);
             this.txtb_dona_email.TabIndex = 22;
+            this.txtb_dona_email.TextChanged += new System.EventHandler(this.txtb_dona_email_TextChanged);
             // 
             // txtb_dona_phone
             // 
@@ -1075,6 +1118,7 @@ namespace tp_final_csharp_prise_3
             this.txtb_dona_phone.Name = "txtb_dona_phone";
             this.txtb_dona_phone.Size = new System.Drawing.Size(162, 31);
             this.txtb_dona_phone.TabIndex = 21;
+            this.txtb_dona_phone.TextChanged += new System.EventHandler(this.txtb_dona_phone_TextChanged);
             // 
             // lbl_prenom
             // 
@@ -1180,9 +1224,9 @@ namespace tp_final_csharp_prise_3
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Aqua;
-            this.panel13.Controls.Add(this.textBox7);
-            this.panel13.Controls.Add(this.textBox8);
-            this.panel13.Controls.Add(this.textBox9);
+            this.panel13.Controls.Add(this.cmbb_sponsor_id);
+            this.panel13.Controls.Add(this.txtb_sponsor_nom);
+            this.panel13.Controls.Add(this.txtb_sponsor_prenom);
             this.panel13.Controls.Add(this.label18);
             this.panel13.Controls.Add(this.label19);
             this.panel13.Controls.Add(this.label20);
@@ -1193,27 +1237,33 @@ namespace tp_final_csharp_prise_3
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(1045, 544);
             this.panel13.TabIndex = 4;
+            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint);
             // 
-            // textBox7
+            // cmbb_sponsor_id
             // 
-            this.textBox7.Location = new System.Drawing.Point(459, 180);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(162, 31);
-            this.textBox7.TabIndex = 35;
+            this.cmbb_sponsor_id.Enabled = false;
+            this.cmbb_sponsor_id.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cmbb_sponsor_id.FormattingEnabled = true;
+            this.cmbb_sponsor_id.Location = new System.Drawing.Point(459, 175);
+            this.cmbb_sponsor_id.Name = "cmbb_sponsor_id";
+            this.cmbb_sponsor_id.Size = new System.Drawing.Size(162, 33);
+            this.cmbb_sponsor_id.TabIndex = 35;
             // 
-            // textBox8
+            // txtb_sponsor_nom
             // 
-            this.textBox8.Location = new System.Drawing.Point(459, 221);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(162, 31);
-            this.textBox8.TabIndex = 34;
+            this.txtb_sponsor_nom.Location = new System.Drawing.Point(459, 221);
+            this.txtb_sponsor_nom.Name = "txtb_sponsor_nom";
+            this.txtb_sponsor_nom.Size = new System.Drawing.Size(162, 31);
+            this.txtb_sponsor_nom.TabIndex = 34;
+            this.txtb_sponsor_nom.TextChanged += new System.EventHandler(this.txtb_sponsor_nom_TextChanged);
             // 
-            // textBox9
+            // txtb_sponsor_prenom
             // 
-            this.textBox9.Location = new System.Drawing.Point(459, 269);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(162, 31);
-            this.textBox9.TabIndex = 33;
+            this.txtb_sponsor_prenom.Location = new System.Drawing.Point(459, 269);
+            this.txtb_sponsor_prenom.Name = "txtb_sponsor_prenom";
+            this.txtb_sponsor_prenom.Size = new System.Drawing.Size(162, 31);
+            this.txtb_sponsor_prenom.TabIndex = 33;
+            this.txtb_sponsor_prenom.TextChanged += new System.EventHandler(this.txtb_sponsor_prenom_TextChanged);
             // 
             // label18
             // 
@@ -1418,12 +1468,12 @@ namespace tp_final_csharp_prise_3
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Aqua;
+            this.panel20.Controls.Add(this.cmbb_prix_id);
             this.panel20.Controls.Add(this.panel52);
             this.panel20.Controls.Add(this.pictureBox14);
-            this.panel20.Controls.Add(this.textBox10);
-            this.panel20.Controls.Add(this.textBox11);
-            this.panel20.Controls.Add(this.textBox12);
-            this.panel20.Controls.Add(this.textBox13);
+            this.panel20.Controls.Add(this.txtb_prix_desc);
+            this.panel20.Controls.Add(this.txtb_prix_valeur);
+            this.panel20.Controls.Add(this.txtb_prix_qte);
             this.panel20.Controls.Add(this.lbl_valeur);
             this.panel20.Controls.Add(this.label22);
             this.panel20.Controls.Add(this.lbl_desc);
@@ -1435,31 +1485,40 @@ namespace tp_final_csharp_prise_3
             this.panel20.Size = new System.Drawing.Size(1045, 544);
             this.panel20.TabIndex = 4;
             // 
+            // cmbb_prix_id
+            // 
+            this.cmbb_prix_id.FormattingEnabled = true;
+            this.cmbb_prix_id.Location = new System.Drawing.Point(478, 191);
+            this.cmbb_prix_id.Name = "cmbb_prix_id";
+            this.cmbb_prix_id.Size = new System.Drawing.Size(162, 33);
+            this.cmbb_prix_id.TabIndex = 29;
+            // 
             // panel52
             // 
             this.panel52.BackColor = System.Drawing.Color.White;
-            this.panel52.Controls.Add(this.button3);
+            this.panel52.Controls.Add(this.btn_valider_sponsor_Prix);
             this.panel52.Location = new System.Drawing.Point(814, 217);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(172, 63);
             this.panel52.TabIndex = 38;
             // 
-            // button3
+            // btn_valider_sponsor_Prix
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Window;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.Navy;
-            this.button3.Location = new System.Drawing.Point(4, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(164, 55);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "Valider";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_valider_sponsor_Prix.BackColor = System.Drawing.SystemColors.Window;
+            this.btn_valider_sponsor_Prix.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_valider_sponsor_Prix.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.btn_valider_sponsor_Prix.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.btn_valider_sponsor_Prix.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
+            this.btn_valider_sponsor_Prix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_valider_sponsor_Prix.Font = new System.Drawing.Font("Reem Kufi", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_valider_sponsor_Prix.ForeColor = System.Drawing.Color.Navy;
+            this.btn_valider_sponsor_Prix.Location = new System.Drawing.Point(4, 3);
+            this.btn_valider_sponsor_Prix.Name = "btn_valider_sponsor_Prix";
+            this.btn_valider_sponsor_Prix.Size = new System.Drawing.Size(164, 55);
+            this.btn_valider_sponsor_Prix.TabIndex = 23;
+            this.btn_valider_sponsor_Prix.Text = "Valider";
+            this.btn_valider_sponsor_Prix.UseVisualStyleBackColor = false;
+            this.btn_valider_sponsor_Prix.Click += new System.EventHandler(this.validerSponsorPrixClick);
             // 
             // pictureBox14
             // 
@@ -1473,33 +1532,29 @@ namespace tp_final_csharp_prise_3
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
-            // textBox10
+            // txtb_prix_desc
             // 
-            this.textBox10.Location = new System.Drawing.Point(478, 196);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(162, 31);
-            this.textBox10.TabIndex = 36;
+            this.txtb_prix_desc.Location = new System.Drawing.Point(478, 237);
+            this.txtb_prix_desc.Name = "txtb_prix_desc";
+            this.txtb_prix_desc.Size = new System.Drawing.Size(162, 31);
+            this.txtb_prix_desc.TabIndex = 1;
+            this.txtb_prix_desc.TextChanged += new System.EventHandler(this.txtb_prix_desc_TextChanged);
             // 
-            // textBox11
+            // txtb_prix_valeur
             // 
-            this.textBox11.Location = new System.Drawing.Point(478, 237);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(162, 31);
-            this.textBox11.TabIndex = 35;
+            this.txtb_prix_valeur.Location = new System.Drawing.Point(478, 285);
+            this.txtb_prix_valeur.Name = "txtb_prix_valeur";
+            this.txtb_prix_valeur.Size = new System.Drawing.Size(162, 31);
+            this.txtb_prix_valeur.TabIndex = 2;
+            this.txtb_prix_valeur.TextChanged += new System.EventHandler(this.txtb_prix_valeur_TextChanged);
             // 
-            // textBox12
+            // txtb_prix_qte
             // 
-            this.textBox12.Location = new System.Drawing.Point(478, 285);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(162, 31);
-            this.textBox12.TabIndex = 34;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(478, 324);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(162, 31);
-            this.textBox13.TabIndex = 33;
+            this.txtb_prix_qte.Location = new System.Drawing.Point(478, 324);
+            this.txtb_prix_qte.Name = "txtb_prix_qte";
+            this.txtb_prix_qte.Size = new System.Drawing.Size(162, 31);
+            this.txtb_prix_qte.TabIndex = 33;
+            this.txtb_prix_qte.TextChanged += new System.EventHandler(this.txtb_prix_qte_TextChanged);
             // 
             // lbl_valeur
             // 
@@ -2021,13 +2076,6 @@ namespace tp_final_csharp_prise_3
             this.label17.TabIndex = 21;
             this.label17.Text = "Écran d\'Accueil";
             // 
-            // dtp_don_date
-            // 
-            this.dtp_don_date.Location = new System.Drawing.Point(174, 67);
-            this.dtp_don_date.Name = "dtp_don_date";
-            this.dtp_don_date.Size = new System.Drawing.Size(300, 42);
-            this.dtp_don_date.TabIndex = 4;
-            // 
             // pagePrincipale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -2199,7 +2247,6 @@ namespace tp_final_csharp_prise_3
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox picb_next;
-        private System.Windows.Forms.TextBox txtb_dona_id;
         private System.Windows.Forms.TextBox txtb_dona_nom;
         private System.Windows.Forms.TextBox txtb_dona_prenom;
         private System.Windows.Forms.TextBox txtb_dona_email;
@@ -2208,7 +2255,6 @@ namespace tp_final_csharp_prise_3
         private System.Windows.Forms.Label lbl_phone;
         private System.Windows.Forms.Label lbl_email;
         private System.Windows.Forms.Label lbl_nom;
-        private System.Windows.Forms.Label lbl_id;
         private System.Windows.Forms.Label lbl_info_donateur;
         private System.Windows.Forms.TabControl tabc_page_princ;
         private System.Windows.Forms.Button button1;
@@ -2281,24 +2327,28 @@ namespace tp_final_csharp_prise_3
         private System.Windows.Forms.Button btn_afficher_donateur;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtb_sponsor_nom;
+        private System.Windows.Forms.TextBox txtb_sponsor_prenom;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Panel panel52;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_valider_sponsor_Prix;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtb_prix_desc;
+        private System.Windows.Forms.TextBox txtb_prix_valeur;
+        private System.Windows.Forms.TextBox txtb_prix_qte;
         private System.Windows.Forms.Label lbl_valeur;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label lbl_desc;
         private System.Windows.Forms.Label lbl_id_prix;
         private System.Windows.Forms.DateTimePicker dtp_don_date;
+        private System.Windows.Forms.Label lbl_id;
+        private System.Windows.Forms.ComboBox cmbb_dona_id;
+        private System.Windows.Forms.ComboBox cmbb_sponsor_id;
+        private System.Windows.Forms.ComboBox cmbb_prix_id;
+        private System.Windows.Forms.Label lbl_don_id;
+        private System.Windows.Forms.ComboBox cmbb_don_id;
     }
 }

@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Collections.Generic;
-
+using System.Windows.Forms;
 
 namespace biblioDonationSys
 {
-    class tabSansHeader : TabControl
+    internal class tabSansHeader : TabControl
     {
         protected override void WndProc(ref Message m)
         {
@@ -14,6 +13,7 @@ namespace biblioDonationSys
             else base.WndProc(ref m);
         }
     }
+
     public abstract class Personne
     {
         protected string _nom;
@@ -23,36 +23,42 @@ namespace biblioDonationSys
         {
             return this._nom;
         }
+
         public string setPrenom()
         {
             return this._prenom;
         }
-       abstract public int getId();
+
+        abstract public int getId();
     }
-   public class Commanditaire : Personne
+
+    public class Commanditaire : Personne
     {
-        static private int _id_creator=1000000;
+        static private int _id_creator = 155;
         protected int _id;
-        Commanditaire(string nom, string prenom) 
+
+        public Commanditaire(string nom, string prenom)
         {
             this._prenom = prenom;
             this._nom = nom;
             this._id = idCreator();
-
         }
+
         private int idCreator()
         {
             _id_creator++;
             return _id_creator;
         }
+
         override public int getId()
         {
             return this._id;
         }
     }
+
     public class Donateur : Personne
     {
-        static private int _id_creator=2000000;
+        static private int _id_creator = 10001;
         protected int _id;
         protected string _email;
         protected string _telephone;
@@ -60,7 +66,7 @@ namespace biblioDonationSys
         protected string _numero_carte;
         protected string _carte_exp;
 
-        public Donateur(string nom, string prenom,string email,string telephone,char type_carte,string num_carte,string carte_exp)
+        public Donateur(string nom, string prenom, string email, string telephone, char type_carte, string num_carte, string carte_exp)
         {
             this._email = email;
             this._carte_exp = carte_exp;
@@ -71,6 +77,7 @@ namespace biblioDonationSys
             this._telephone = telephone;
             this._id = idCreator();
         }
+
         public Donateur(string nom, string prenom, string telephone, char type_carte, string num_carte, string carte_exp)
         {
             this._carte_exp = carte_exp;
@@ -81,19 +88,22 @@ namespace biblioDonationSys
             this._telephone = telephone;
             this._id = idCreator();
         }
+
         private int idCreator()
         {
             _id_creator++;
             return _id_creator;
         }
+
         public override int getId()
         {
             return this._id;
         }
     }
+
     public class Prix
     {
-        static private int _id_creator=3000000;
+        static private int _id_creator = 3000000;
         protected int _id;
         protected string _description;
         protected double _valeurs;
@@ -102,42 +112,50 @@ namespace biblioDonationSys
         protected int _qte_disponible;
         protected int _id_commanditaire;
 
-        Prix(string description,double valeurs,int qte_original,int qte_dispo,int id_sponsor)
+        public Prix(string description, double valeurs, int qte_original, int id_sponsor)
         {
             this._description = description;
             this._valeurs = valeurs;
             this._qte_original = qte_original;
-            this._qte_disponible = qte_dispo;
+            this._qte_disponible = qte_original;
             this._id_commanditaire = id_sponsor;
             this._id = idCreator();
         }
+
         private int idCreator()
         {
             _id_creator++;
             return _id_creator;
         }
     }
+
     public class Don
     {
-        static private int _id_creator = 0;
+        static private int _id_creator = 1;
         protected int _id;
         protected string _date;
         protected int _id_donateur;
         protected double _montant;
 
-        public Don(string date,int donateur,double montant)
+        public Don(string date, int donateur, double montant)
         {
             this._id = idCreator();
             this._date = date;
             this._id_donateur = donateur;
             this._montant = montant;
         }
+        public int getId()
+        {
+            return this._id;
+        }
+
         private int idCreator()
         {
             _id_creator++;
             return _id_creator;
         }
     }
+
     public class GestionnaireSTE
     {
         protected List<Commanditaire> tab_sponsor = new List<Commanditaire>();
@@ -145,18 +163,37 @@ namespace biblioDonationSys
         protected List<Don> tab_don = new List<Don>();
         protected List<Prix> tab_prix = new List<Prix>();
 
+        public List<Commanditaire> getSponsor()
+        {
+            return this.tab_sponsor;
+        }
+        public List<Donateur> getDonateur()
+        {
+            return this.tab_donateurs;
+        }
+        public List<Don> getDon()
+        {
+            return this.tab_don;
+        }
+        public List<Prix> getPrix()
+        {
+            return this.tab_prix;
+        }
         public void ajouterSponsor(Commanditaire sponsor)
         {
             this.tab_sponsor.Add(sponsor);
         }
+
         public void ajouterDonateur(Donateur donateur)
         {
             this.tab_donateurs.Add(donateur);
         }
+
         public void ajouterPrix(Prix prix)
         {
             this.tab_prix.Add(prix);
         }
+
         public void ajouterDon(Don don)
         {
             this.tab_don.Add(don);
