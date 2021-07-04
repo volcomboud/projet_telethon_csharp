@@ -24,7 +24,7 @@ namespace biblioDonationSys
             return this._nom;
         }
 
-        public string setPrenom()
+        public string getPrenom()
         {
             return this._prenom;
         }
@@ -88,7 +88,12 @@ namespace biblioDonationSys
             this._telephone = telephone;
             this._id = idCreator();
         }
-
+        public string getType()
+        {
+            if (this._type_carte == 'A') return "Amex";
+            else if (this._type_carte == 'V') return "Visa";
+            else return "MasterCard";
+        }
         private int idCreator()
         {
             _id_creator++;
@@ -110,18 +115,34 @@ namespace biblioDonationSys
 
         protected int _qte_original;
         protected int _qte_disponible;
-        protected int _id_commanditaire;
+        protected Commanditaire _commanditaire;
 
-        public Prix(string description, double valeurs, int qte_original, int id_sponsor)
+        public Prix(string description, double valeurs, int qte_original, Commanditaire sponsor)
         {
             this._description = description;
             this._valeurs = valeurs;
             this._qte_original = qte_original;
             this._qte_disponible = qte_original;
-            this._id_commanditaire = id_sponsor;
+            this._commanditaire = sponsor;
             this._id = idCreator();
         }
+        public int getQte()
+        {
+            return this._qte_original;
+        }
+        public Commanditaire getSponsed()
+        {
+            return this._commanditaire;
+        }
 
+        public double getValeur()
+        {
+            return this._valeurs;
+        }
+        public string getDesc()
+        {
+            return this._description;
+        }
         private int idCreator()
         {
             _id_creator++;
@@ -131,18 +152,34 @@ namespace biblioDonationSys
 
     public class Don
     {
-        static private int _id_creator = 1;
+        static private int _id_creator = 0;
         protected int _id;
         protected string _date;
-        protected int _id_donateur;
+        protected Donateur _donateur;
         protected double _montant;
 
-        public Don(string date, int donateur, double montant)
+        public Don(string date, Donateur donateur, double montant)
         {
             this._id = idCreator();
             this._date = date;
-            this._id_donateur = donateur;
+            this._donateur = donateur;
             this._montant = montant;
+        }
+        //public int getId()
+        //{
+        //    return this._id;
+        //}
+        public string getDate()
+        {
+            return this._date;
+        }
+       public Donateur getDonateur()
+        {
+            return this._donateur;
+        }
+        public double getMontant()
+        {
+            return this._montant;
         }
         public int getId()
         {

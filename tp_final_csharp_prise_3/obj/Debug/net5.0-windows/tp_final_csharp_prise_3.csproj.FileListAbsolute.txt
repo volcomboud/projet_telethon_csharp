@@ -24,3 +24,4 @@ C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_pris
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\bin\Debug\net5.0-windows\biblioDonationSys.dll
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\bin\Debug\net5.0-windows\biblioDonationSys.pdb
 C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.csproj.CopyComplete
+C:\Users\Thinky Winkie\source\repos\tp_final_csharp_prise_3\tp_final_csharp_prise_3\obj\Debug\net5.0-windows\tp_final_csharp_prise_3.presentation.resources

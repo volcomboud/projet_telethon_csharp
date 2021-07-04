@@ -29,12 +29,17 @@ namespace tp_final_csharp_prise_3
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pagePrincipale));
             this.picb_exit = new System.Windows.Forms.PictureBox();
             this.pnl_pp_top = new System.Windows.Forms.Panel();
             this.pnl_coin = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.picb_info = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnl_pp_left = new System.Windows.Forms.Panel();
@@ -59,6 +64,10 @@ namespace tp_final_csharp_prise_3
             this.btn_valider_donation = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtb_don_point = new System.Windows.Forms.TextBox();
+            this.lbl_don_point = new System.Windows.Forms.Label();
+            this.lbl_dona_prix = new System.Windows.Forms.Label();
+            this.picb_dona_prix = new System.Windows.Forms.PictureBox();
             this.lbl_don_id = new System.Windows.Forms.Label();
             this.cmbb_don_id = new System.Windows.Forms.ComboBox();
             this.dtp_don_date = new System.Windows.Forms.DateTimePicker();
@@ -136,7 +145,6 @@ namespace tp_final_csharp_prise_3
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.cmbb_prix_id = new System.Windows.Forms.ComboBox();
             this.panel52 = new System.Windows.Forms.Panel();
             this.btn_valider_sponsor_Prix = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -146,7 +154,6 @@ namespace tp_final_csharp_prise_3
             this.lbl_valeur = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.lbl_desc = new System.Windows.Forms.Label();
-            this.lbl_id_prix = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -154,6 +161,13 @@ namespace tp_final_csharp_prise_3
             this.panel28 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.dgv_prix_sponsor = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valeur = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel31 = new System.Windows.Forms.Panel();
             this.panel30 = new System.Windows.Forms.Panel();
             this.picb_close = new System.Windows.Forms.PictureBox();
@@ -168,6 +182,14 @@ namespace tp_final_csharp_prise_3
             this.panel34 = new System.Windows.Forms.Panel();
             this.panel35 = new System.Windows.Forms.Panel();
             this.panel36 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.dgv_donateur_don = new System.Windows.Forms.DataGridView();
+            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_don = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type_carte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel37 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
             this.picb_close_donneur = new System.Windows.Forms.PictureBox();
@@ -182,6 +204,13 @@ namespace tp_final_csharp_prise_3
             this.panel43 = new System.Windows.Forms.Panel();
             this.panel44 = new System.Windows.Forms.Panel();
             this.panel45 = new System.Windows.Forms.Panel();
+            this.panel56 = new System.Windows.Forms.Panel();
+            this.dgv_cadeau = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.point = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel46 = new System.Windows.Forms.Panel();
             this.panel47 = new System.Windows.Forms.Panel();
             this.picb_close_sponsor = new System.Windows.Forms.PictureBox();
@@ -195,6 +224,9 @@ namespace tp_final_csharp_prise_3
             this.pnl_pp_top.SuspendLayout();
             this.pnl_coin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnl_pp_left.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -206,6 +238,7 @@ namespace tp_final_csharp_prise_3
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_dona_prix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -245,6 +278,8 @@ namespace tp_final_csharp_prise_3
             this.panel28.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel32.SuspendLayout();
+            this.panel54.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_prix_sponsor)).BeginInit();
             this.panel31.SuspendLayout();
             this.panel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_close)).BeginInit();
@@ -255,6 +290,8 @@ namespace tp_final_csharp_prise_3
             this.panel34.SuspendLayout();
             this.panel35.SuspendLayout();
             this.panel36.SuspendLayout();
+            this.panel53.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_donateur_don)).BeginInit();
             this.panel37.SuspendLayout();
             this.panel38.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_close_donneur)).BeginInit();
@@ -265,6 +302,8 @@ namespace tp_final_csharp_prise_3
             this.panel43.SuspendLayout();
             this.panel44.SuspendLayout();
             this.panel45.SuspendLayout();
+            this.panel56.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cadeau)).BeginInit();
             this.panel46.SuspendLayout();
             this.panel47.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_close_sponsor)).BeginInit();
@@ -319,10 +358,34 @@ namespace tp_final_csharp_prise_3
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.pictureBox15);
+            this.panel2.Controls.Add(this.picb_info);
             this.panel2.Location = new System.Drawing.Point(856, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(376, 99);
             this.panel2.TabIndex = 3;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::tp_final_csharp_prise_3.Properties.Resources.right_arrow_presentation;
+            this.pictureBox15.Location = new System.Drawing.Point(254, 11);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(63, 45);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 3;
+            this.pictureBox15.TabStop = false;
+            // 
+            // picb_info
+            // 
+            this.picb_info.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picb_info.Image = global::tp_final_csharp_prise_3.Properties.Resources.information;
+            this.picb_info.Location = new System.Drawing.Point(323, 9);
+            this.picb_info.Name = "picb_info";
+            this.picb_info.Size = new System.Drawing.Size(45, 47);
+            this.picb_info.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb_info.TabIndex = 4;
+            this.picb_info.TabStop = false;
+            this.picb_info.Click += new System.EventHandler(this.picb_info_Click);
             // 
             // panel1
             // 
@@ -599,6 +662,10 @@ namespace tp_final_csharp_prise_3
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Aqua;
+            this.groupBox1.Controls.Add(this.txtb_don_point);
+            this.groupBox1.Controls.Add(this.lbl_don_point);
+            this.groupBox1.Controls.Add(this.lbl_dona_prix);
+            this.groupBox1.Controls.Add(this.picb_dona_prix);
             this.groupBox1.Controls.Add(this.lbl_don_id);
             this.groupBox1.Controls.Add(this.cmbb_don_id);
             this.groupBox1.Controls.Add(this.dtp_don_date);
@@ -613,11 +680,45 @@ namespace tp_final_csharp_prise_3
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Donation";
             // 
+            // txtb_don_point
+            // 
+            this.txtb_don_point.Location = new System.Drawing.Point(174, 197);
+            this.txtb_don_point.Name = "txtb_don_point";
+            this.txtb_don_point.Size = new System.Drawing.Size(150, 42);
+            this.txtb_don_point.TabIndex = 42;
+            this.txtb_don_point.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lbl_don_point
+            // 
+            this.lbl_don_point.AutoSize = true;
+            this.lbl_don_point.Location = new System.Drawing.Point(65, 195);
+            this.lbl_don_point.Name = "lbl_don_point";
+            this.lbl_don_point.Size = new System.Drawing.Size(78, 34);
+            this.lbl_don_point.TabIndex = 41;
+            this.lbl_don_point.Text = "Points :";
+            // 
+            // lbl_dona_prix
+            // 
+            this.lbl_dona_prix.AutoSize = true;
+            this.lbl_dona_prix.Location = new System.Drawing.Point(370, 133);
+            this.lbl_dona_prix.Name = "lbl_dona_prix";
+            this.lbl_dona_prix.Size = new System.Drawing.Size(0, 34);
+            this.lbl_dona_prix.TabIndex = 40;
+            // 
+            // picb_dona_prix
+            // 
+            this.picb_dona_prix.Location = new System.Drawing.Point(385, 172);
+            this.picb_dona_prix.Name = "picb_dona_prix";
+            this.picb_dona_prix.Size = new System.Drawing.Size(64, 59);
+            this.picb_dona_prix.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb_dona_prix.TabIndex = 39;
+            this.picb_dona_prix.TabStop = false;
+            // 
             // lbl_don_id
             // 
             this.lbl_don_id.AutoSize = true;
             this.lbl_don_id.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_don_id.Location = new System.Drawing.Point(65, 202);
+            this.lbl_don_id.Location = new System.Drawing.Point(65, 38);
             this.lbl_don_id.Name = "lbl_don_id";
             this.lbl_don_id.Size = new System.Drawing.Size(40, 21);
             this.lbl_don_id.TabIndex = 38;
@@ -628,14 +729,14 @@ namespace tp_final_csharp_prise_3
             this.cmbb_don_id.Enabled = false;
             this.cmbb_don_id.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cmbb_don_id.FormattingEnabled = true;
-            this.cmbb_don_id.Location = new System.Drawing.Point(174, 196);
+            this.cmbb_don_id.Location = new System.Drawing.Point(174, 32);
             this.cmbb_don_id.Name = "cmbb_don_id";
             this.cmbb_don_id.Size = new System.Drawing.Size(150, 33);
             this.cmbb_don_id.TabIndex = 37;
             // 
             // dtp_don_date
             // 
-            this.dtp_don_date.Location = new System.Drawing.Point(174, 67);
+            this.dtp_don_date.Location = new System.Drawing.Point(174, 78);
             this.dtp_don_date.Name = "dtp_don_date";
             this.dtp_don_date.Size = new System.Drawing.Size(300, 42);
             this.dtp_don_date.TabIndex = 4;
@@ -643,7 +744,7 @@ namespace tp_final_csharp_prise_3
             // 
             // txtb_don_montant
             // 
-            this.txtb_don_montant.Location = new System.Drawing.Point(174, 130);
+            this.txtb_don_montant.Location = new System.Drawing.Point(174, 135);
             this.txtb_don_montant.Name = "txtb_don_montant";
             this.txtb_don_montant.Size = new System.Drawing.Size(150, 42);
             this.txtb_don_montant.TabIndex = 3;
@@ -653,7 +754,7 @@ namespace tp_final_csharp_prise_3
             // 
             this.lbl_montant.AutoSize = true;
             this.lbl_montant.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_montant.Location = new System.Drawing.Point(65, 141);
+            this.lbl_montant.Location = new System.Drawing.Point(65, 146);
             this.lbl_montant.Name = "lbl_montant";
             this.lbl_montant.Size = new System.Drawing.Size(100, 21);
             this.lbl_montant.TabIndex = 1;
@@ -663,7 +764,7 @@ namespace tp_final_csharp_prise_3
             // 
             this.lbl_don_date.AutoSize = true;
             this.lbl_don_date.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_don_date.Location = new System.Drawing.Point(65, 73);
+            this.lbl_don_date.Location = new System.Drawing.Point(65, 84);
             this.lbl_don_date.Name = "lbl_don_date";
             this.lbl_don_date.Size = new System.Drawing.Size(65, 21);
             this.lbl_don_date.TabIndex = 0;
@@ -1377,7 +1478,7 @@ namespace tp_final_csharp_prise_3
             this.btn_afficher_sponsor.Name = "btn_afficher_sponsor";
             this.btn_afficher_sponsor.Size = new System.Drawing.Size(138, 106);
             this.btn_afficher_sponsor.TabIndex = 30;
-            this.btn_afficher_sponsor.Text = "Afficher\r\nSponsor";
+            this.btn_afficher_sponsor.Text = "Afficher\r\nPrix remis\r\n\r\n";
             this.btn_afficher_sponsor.UseVisualStyleBackColor = false;
             this.btn_afficher_sponsor.Click += new System.EventHandler(this.btn_afficher_sponsor_Click);
             // 
@@ -1404,7 +1505,7 @@ namespace tp_final_csharp_prise_3
             this.btn_afficher_prix.Name = "btn_afficher_prix";
             this.btn_afficher_prix.Size = new System.Drawing.Size(138, 106);
             this.btn_afficher_prix.TabIndex = 30;
-            this.btn_afficher_prix.Text = "Afficher\r\nPrix";
+            this.btn_afficher_prix.Text = "Afficher\r\nSponsor\r\n\r\n";
             this.btn_afficher_prix.UseVisualStyleBackColor = false;
             this.btn_afficher_prix.Click += new System.EventHandler(this.btn_afficher_prix_Click);
             // 
@@ -1468,7 +1569,6 @@ namespace tp_final_csharp_prise_3
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Aqua;
-            this.panel20.Controls.Add(this.cmbb_prix_id);
             this.panel20.Controls.Add(this.panel52);
             this.panel20.Controls.Add(this.pictureBox14);
             this.panel20.Controls.Add(this.txtb_prix_desc);
@@ -1477,21 +1577,12 @@ namespace tp_final_csharp_prise_3
             this.panel20.Controls.Add(this.lbl_valeur);
             this.panel20.Controls.Add(this.label22);
             this.panel20.Controls.Add(this.lbl_desc);
-            this.panel20.Controls.Add(this.lbl_id_prix);
             this.panel20.Controls.Add(this.panel21);
             this.panel20.Controls.Add(this.label13);
             this.panel20.Location = new System.Drawing.Point(-10, -1);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(1045, 544);
             this.panel20.TabIndex = 4;
-            // 
-            // cmbb_prix_id
-            // 
-            this.cmbb_prix_id.FormattingEnabled = true;
-            this.cmbb_prix_id.Location = new System.Drawing.Point(478, 191);
-            this.cmbb_prix_id.Name = "cmbb_prix_id";
-            this.cmbb_prix_id.Size = new System.Drawing.Size(162, 33);
-            this.cmbb_prix_id.TabIndex = 29;
             // 
             // panel52
             // 
@@ -1534,15 +1625,16 @@ namespace tp_final_csharp_prise_3
             // 
             // txtb_prix_desc
             // 
-            this.txtb_prix_desc.Location = new System.Drawing.Point(478, 237);
+            this.txtb_prix_desc.Location = new System.Drawing.Point(478, 289);
+            this.txtb_prix_desc.Multiline = true;
             this.txtb_prix_desc.Name = "txtb_prix_desc";
-            this.txtb_prix_desc.Size = new System.Drawing.Size(162, 31);
+            this.txtb_prix_desc.Size = new System.Drawing.Size(313, 95);
             this.txtb_prix_desc.TabIndex = 1;
             this.txtb_prix_desc.TextChanged += new System.EventHandler(this.txtb_prix_desc_TextChanged);
             // 
             // txtb_prix_valeur
             // 
-            this.txtb_prix_valeur.Location = new System.Drawing.Point(478, 285);
+            this.txtb_prix_valeur.Location = new System.Drawing.Point(478, 210);
             this.txtb_prix_valeur.Name = "txtb_prix_valeur";
             this.txtb_prix_valeur.Size = new System.Drawing.Size(162, 31);
             this.txtb_prix_valeur.TabIndex = 2;
@@ -1550,7 +1642,7 @@ namespace tp_final_csharp_prise_3
             // 
             // txtb_prix_qte
             // 
-            this.txtb_prix_qte.Location = new System.Drawing.Point(478, 324);
+            this.txtb_prix_qte.Location = new System.Drawing.Point(478, 249);
             this.txtb_prix_qte.Name = "txtb_prix_qte";
             this.txtb_prix_qte.Size = new System.Drawing.Size(162, 31);
             this.txtb_prix_qte.TabIndex = 33;
@@ -1561,7 +1653,7 @@ namespace tp_final_csharp_prise_3
             this.lbl_valeur.AutoSize = true;
             this.lbl_valeur.Font = new System.Drawing.Font("Reem Kufi", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_valeur.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_valeur.Location = new System.Drawing.Point(355, 278);
+            this.lbl_valeur.Location = new System.Drawing.Point(355, 203);
             this.lbl_valeur.Name = "lbl_valeur";
             this.lbl_valeur.Size = new System.Drawing.Size(119, 34);
             this.lbl_valeur.TabIndex = 32;
@@ -1572,7 +1664,7 @@ namespace tp_final_csharp_prise_3
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Reem Kufi", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label22.ForeColor = System.Drawing.Color.Navy;
-            this.label22.Location = new System.Drawing.Point(355, 317);
+            this.label22.Location = new System.Drawing.Point(355, 242);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(95, 34);
             this.label22.TabIndex = 31;
@@ -1583,22 +1675,11 @@ namespace tp_final_csharp_prise_3
             this.lbl_desc.AutoSize = true;
             this.lbl_desc.Font = new System.Drawing.Font("Reem Kufi", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_desc.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_desc.Location = new System.Drawing.Point(355, 230);
+            this.lbl_desc.Location = new System.Drawing.Point(355, 287);
             this.lbl_desc.Name = "lbl_desc";
             this.lbl_desc.Size = new System.Drawing.Size(113, 34);
             this.lbl_desc.TabIndex = 30;
             this.lbl_desc.Text = "Description :";
-            // 
-            // lbl_id_prix
-            // 
-            this.lbl_id_prix.AutoSize = true;
-            this.lbl_id_prix.Font = new System.Drawing.Font("Reem Kufi", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_id_prix.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_id_prix.Location = new System.Drawing.Point(355, 189);
-            this.lbl_id_prix.Name = "lbl_id_prix";
-            this.lbl_id_prix.Size = new System.Drawing.Size(37, 34);
-            this.lbl_id_prix.TabIndex = 29;
-            this.lbl_id_prix.Text = "Id :";
             // 
             // panel21
             // 
@@ -1664,11 +1745,89 @@ namespace tp_final_csharp_prise_3
             // panel32
             // 
             this.panel32.BackColor = System.Drawing.Color.White;
+            this.panel32.Controls.Add(this.panel54);
             this.panel32.Controls.Add(this.panel31);
             this.panel32.Location = new System.Drawing.Point(3, 3);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(848, 360);
             this.panel32.TabIndex = 1;
+            // 
+            // panel54
+            // 
+            this.panel54.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel54.Controls.Add(this.dgv_prix_sponsor);
+            this.panel54.Location = new System.Drawing.Point(48, 64);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(752, 233);
+            this.panel54.TabIndex = 3;
+            // 
+            // dgv_prix_sponsor
+            // 
+            this.dgv_prix_sponsor.BackgroundColor = System.Drawing.Color.Aqua;
+            this.dgv_prix_sponsor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgv_prix_sponsor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_prix_sponsor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.valeur,
+            this.qte,
+            this.desc});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Reem Kufi", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_prix_sponsor.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_prix_sponsor.GridColor = System.Drawing.Color.BlueViolet;
+            this.dgv_prix_sponsor.Location = new System.Drawing.Point(4, 4);
+            this.dgv_prix_sponsor.Name = "dgv_prix_sponsor";
+            this.dgv_prix_sponsor.ReadOnly = true;
+            this.dgv_prix_sponsor.RowHeadersWidth = 62;
+            this.dgv_prix_sponsor.RowTemplate.Height = 33;
+            this.dgv_prix_sponsor.Size = new System.Drawing.Size(744, 225);
+            this.dgv_prix_sponsor.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nom";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Prénom";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 130;
+            // 
+            // valeur
+            // 
+            this.valeur.HeaderText = "Valeur";
+            this.valeur.MinimumWidth = 8;
+            this.valeur.Name = "valeur";
+            this.valeur.ReadOnly = true;
+            this.valeur.Width = 80;
+            // 
+            // qte
+            // 
+            this.qte.HeaderText = "Quantité";
+            this.qte.MinimumWidth = 8;
+            this.qte.Name = "qte";
+            this.qte.ReadOnly = true;
+            this.qte.Width = 80;
+            // 
+            // desc
+            // 
+            this.desc.HeaderText = "Description";
+            this.desc.MinimumWidth = 8;
+            this.desc.Name = "desc";
+            this.desc.ReadOnly = true;
+            this.desc.Width = 260;
             // 
             // panel31
             // 
@@ -1816,11 +1975,98 @@ namespace tp_final_csharp_prise_3
             // panel36
             // 
             this.panel36.BackColor = System.Drawing.Color.White;
+            this.panel36.Controls.Add(this.panel53);
             this.panel36.Controls.Add(this.panel37);
             this.panel36.Location = new System.Drawing.Point(3, 3);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(848, 360);
             this.panel36.TabIndex = 1;
+            // 
+            // panel53
+            // 
+            this.panel53.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel53.Controls.Add(this.dgv_donateur_don);
+            this.panel53.Location = new System.Drawing.Point(46, 82);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(752, 233);
+            this.panel53.TabIndex = 2;
+            // 
+            // dgv_donateur_don
+            // 
+            this.dgv_donateur_don.BackgroundColor = System.Drawing.Color.Aqua;
+            this.dgv_donateur_don.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgv_donateur_don.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_donateur_don.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nom,
+            this.prenom,
+            this.montant,
+            this.date,
+            this.id_don,
+            this.type_carte});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Reem Kufi", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_donateur_don.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_donateur_don.GridColor = System.Drawing.Color.BlueViolet;
+            this.dgv_donateur_don.Location = new System.Drawing.Point(4, 4);
+            this.dgv_donateur_don.Name = "dgv_donateur_don";
+            this.dgv_donateur_don.ReadOnly = true;
+            this.dgv_donateur_don.RowHeadersWidth = 62;
+            this.dgv_donateur_don.RowTemplate.Height = 33;
+            this.dgv_donateur_don.Size = new System.Drawing.Size(744, 225);
+            this.dgv_donateur_don.TabIndex = 1;
+            // 
+            // nom
+            // 
+            this.nom.HeaderText = "Nom";
+            this.nom.MinimumWidth = 8;
+            this.nom.Name = "nom";
+            this.nom.ReadOnly = true;
+            this.nom.Width = 130;
+            // 
+            // prenom
+            // 
+            this.prenom.HeaderText = "Prénom";
+            this.prenom.MinimumWidth = 8;
+            this.prenom.Name = "prenom";
+            this.prenom.ReadOnly = true;
+            this.prenom.Width = 130;
+            // 
+            // montant
+            // 
+            this.montant.HeaderText = "Montant ";
+            this.montant.MinimumWidth = 8;
+            this.montant.Name = "montant";
+            this.montant.ReadOnly = true;
+            this.montant.Width = 90;
+            // 
+            // date
+            // 
+            this.date.HeaderText = "Date";
+            this.date.MinimumWidth = 8;
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            this.date.Width = 150;
+            // 
+            // id_don
+            // 
+            this.id_don.HeaderText = "#id Don";
+            this.id_don.MinimumWidth = 8;
+            this.id_don.Name = "id_don";
+            this.id_don.ReadOnly = true;
+            this.id_don.Width = 90;
+            // 
+            // type_carte
+            // 
+            this.type_carte.HeaderText = "Payé Avec";
+            this.type_carte.MinimumWidth = 8;
+            this.type_carte.Name = "type_carte";
+            this.type_carte.ReadOnly = true;
+            this.type_carte.Width = 90;
             // 
             // panel37
             // 
@@ -1968,11 +2214,90 @@ namespace tp_final_csharp_prise_3
             // panel45
             // 
             this.panel45.BackColor = System.Drawing.Color.White;
+            this.panel45.Controls.Add(this.panel56);
             this.panel45.Controls.Add(this.panel46);
             this.panel45.Location = new System.Drawing.Point(3, 3);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(848, 360);
             this.panel45.TabIndex = 1;
+            // 
+            // panel56
+            // 
+            this.panel56.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel56.Controls.Add(this.dgv_cadeau);
+            this.panel56.Location = new System.Drawing.Point(42, 73);
+            this.panel56.Name = "panel56";
+            this.panel56.Size = new System.Drawing.Size(752, 233);
+            this.panel56.TabIndex = 3;
+            // 
+            // dgv_cadeau
+            // 
+            this.dgv_cadeau.BackgroundColor = System.Drawing.Color.Aqua;
+            this.dgv_cadeau.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgv_cadeau.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dgv_cadeau.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_cadeau.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.point,
+            this.prix,
+            this.dataGridViewTextBoxColumn10});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Reem Kufi", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_cadeau.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_cadeau.GridColor = System.Drawing.Color.BlueViolet;
+            this.dgv_cadeau.Location = new System.Drawing.Point(4, 4);
+            this.dgv_cadeau.Name = "dgv_cadeau";
+            this.dgv_cadeau.ReadOnly = true;
+            this.dgv_cadeau.RowHeadersWidth = 62;
+            this.dgv_cadeau.RowTemplate.Height = 33;
+            this.dgv_cadeau.Size = new System.Drawing.Size(744, 225);
+            this.dgv_cadeau.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Nom";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Prénom";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 130;
+            // 
+            // point
+            // 
+            this.point.HeaderText = "Points";
+            this.point.MinimumWidth = 8;
+            this.point.Name = "point";
+            this.point.ReadOnly = true;
+            this.point.Width = 120;
+            // 
+            // prix
+            // 
+            this.prix.HeaderText = "Cadeaux";
+            this.prix.MinimumWidth = 8;
+            this.prix.Name = "prix";
+            this.prix.ReadOnly = true;
+            this.prix.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Date";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 150;
             // 
             // panel46
             // 
@@ -2087,6 +2412,7 @@ namespace tp_final_csharp_prise_3
             this.Controls.Add(this.pnl_pp_top);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "pagePrincipale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Service de donation";
@@ -2095,6 +2421,9 @@ namespace tp_final_csharp_prise_3
             this.pnl_pp_top.ResumeLayout(false);
             this.pnl_coin.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnl_pp_left.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -2109,6 +2438,7 @@ namespace tp_final_csharp_prise_3
             this.panel5.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_dona_prix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -2157,6 +2487,8 @@ namespace tp_final_csharp_prise_3
             this.panel28.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
             this.panel32.ResumeLayout(false);
+            this.panel54.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_prix_sponsor)).EndInit();
             this.panel31.ResumeLayout(false);
             this.panel30.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picb_close)).EndInit();
@@ -2168,6 +2500,8 @@ namespace tp_final_csharp_prise_3
             this.panel34.ResumeLayout(false);
             this.panel35.ResumeLayout(false);
             this.panel36.ResumeLayout(false);
+            this.panel53.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_donateur_don)).EndInit();
             this.panel37.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picb_close_donneur)).EndInit();
@@ -2179,6 +2513,8 @@ namespace tp_final_csharp_prise_3
             this.panel43.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
             this.panel45.ResumeLayout(false);
+            this.panel56.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cadeau)).EndInit();
             this.panel46.ResumeLayout(false);
             this.panel47.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picb_close_sponsor)).EndInit();
@@ -2350,5 +2686,33 @@ namespace tp_final_csharp_prise_3
         private System.Windows.Forms.ComboBox cmbb_prix_id;
         private System.Windows.Forms.Label lbl_don_id;
         private System.Windows.Forms.ComboBox cmbb_don_id;
+        private System.Windows.Forms.Label lbl_dona_prix;
+        private System.Windows.Forms.PictureBox picb_dona_prix;
+        private System.Windows.Forms.TextBox txtb_don_point;
+        private System.Windows.Forms.Label lbl_don_point;
+        private System.Windows.Forms.DataGridView dgv_donateur_don;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn montant;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_don;
+        private System.Windows.Forms.DataGridViewTextBoxColumn type_carte;
+        private System.Windows.Forms.Panel panel54;
+        private System.Windows.Forms.DataGridView dgv_prix_sponsor;
+        private System.Windows.Forms.Panel panel53;
+        private System.Windows.Forms.Panel panel56;
+        private System.Windows.Forms.DataGridView dgv_cadeau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valeur;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qte;
+        private System.Windows.Forms.DataGridViewTextBoxColumn desc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn point;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prix;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox picb_info;
     }
 }

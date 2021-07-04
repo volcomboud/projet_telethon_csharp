@@ -32,23 +32,23 @@ namespace tp_final_csharp_prise_3
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtb_login = new System.Windows.Forms.TextBox();
+            this.txtb_pass = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btn_connexion = new System.Windows.Forms.Button();
             this.picb_exit = new System.Windows.Forms.PictureBox();
             this.pnl_match_form = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_exit)).BeginInit();
-            this.pnl_match_form.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_exit)).BeginInit();
+            this.pnl_match_form.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -69,6 +69,56 @@ namespace tp_final_csharp_prise_3
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(325, 150);
             this.panel1.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.txtb_login);
+            this.panel3.Controls.Add(this.txtb_pass);
+            this.panel3.Controls.Add(this.pictureBox4);
+            this.panel3.Controls.Add(this.pictureBox5);
+            this.panel3.Location = new System.Drawing.Point(4, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(317, 142);
+            this.panel3.TabIndex = 6;
+            // 
+            // txtb_login
+            // 
+            this.txtb_login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtb_login.Location = new System.Drawing.Point(87, 25);
+            this.txtb_login.Name = "txtb_login";
+            this.txtb_login.Size = new System.Drawing.Size(202, 31);
+            this.txtb_login.TabIndex = 0;
+            // 
+            // txtb_pass
+            // 
+            this.txtb_pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtb_pass.Location = new System.Drawing.Point(87, 95);
+            this.txtb_pass.Name = "txtb_pass";
+            this.txtb_pass.Size = new System.Drawing.Size(202, 31);
+            this.txtb_pass.TabIndex = 1;
+            this.txtb_pass.UseSystemPasswordChar = true;
+            this.txtb_pass.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::tp_final_csharp_prise_3.Properties.Resources.user;
+            this.pictureBox4.Location = new System.Drawing.Point(32, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::tp_final_csharp_prise_3.Properties.Resources.padlock;
+            this.pictureBox5.Location = new System.Drawing.Point(32, 84);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
             // 
             // btn_connexion
             // 
@@ -121,55 +171,6 @@ namespace tp_final_csharp_prise_3
             this.panel2.Size = new System.Drawing.Size(398, 622);
             this.panel2.TabIndex = 8;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Controls.Add(this.pictureBox5);
-            this.panel3.Location = new System.Drawing.Point(4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(317, 142);
-            this.panel3.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(87, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 31);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(87, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 31);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.UseSystemPasswordChar = true;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::tp_final_csharp_prise_3.Properties.Resources.user;
-            this.pictureBox4.Location = new System.Drawing.Point(32, 16);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::tp_final_csharp_prise_3.Properties.Resources.padlock;
-            this.pictureBox5.Location = new System.Drawing.Point(32, 84);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(49, 49);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -184,13 +185,13 @@ namespace tp_final_csharp_prise_3
             this.Text = "Système Téléthon STE";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picb_exit)).EndInit();
-            this.pnl_match_form.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_exit)).EndInit();
+            this.pnl_match_form.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -204,8 +205,8 @@ namespace tp_final_csharp_prise_3
         private System.Windows.Forms.Panel pnl_match_form;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtb_login;
+        private System.Windows.Forms.TextBox txtb_pass;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
     }
