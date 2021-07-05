@@ -51,10 +51,10 @@ namespace tp_final_csharp_prise_3
         }
         private bool verificationCredential()
         {
-            //string user = "téléthon 2021";
-            //string pass = "Don@2021";
-            string user = "";
-            string pass = "";
+            string user = "téléthon 2021";
+            string pass = "Don@2021";
+            //string user = "";
+            //string pass = "";
             if (txtb_login.Text == user && txtb_pass.Text == pass) return true;
             return false;
         }
