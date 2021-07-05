@@ -430,6 +430,8 @@ namespace tp_final_csharp_prise_3
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(195, 10);
             this.panel18.TabIndex = 28;
+            this.panel18.MouseLeave += new System.EventHandler(this.mouseViolet);
+            this.panel18.MouseHover += new System.EventHandler(this.mouseAqua);
             // 
             // btn_acceuil
             // 
@@ -456,6 +458,8 @@ namespace tp_final_csharp_prise_3
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(195, 10);
             this.panel17.TabIndex = 28;
+            this.panel17.MouseLeave += new System.EventHandler(this.mouseAqua);
+            this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseViolet);
             // 
             // panel16
             // 
@@ -464,6 +468,8 @@ namespace tp_final_csharp_prise_3
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(195, 10);
             this.panel16.TabIndex = 28;
+            this.panel16.MouseLeave += new System.EventHandler(this.mouseAqua);
+            this.panel16.MouseHover += new System.EventHandler(this.mouseViolet);
             // 
             // panel15
             // 
@@ -472,6 +478,8 @@ namespace tp_final_csharp_prise_3
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(195, 10);
             this.panel15.TabIndex = 27;
+            this.panel15.MouseLeave += new System.EventHandler(this.mouseViolet);
+            this.panel15.MouseHover += new System.EventHandler(this.mouseAqua);
             // 
             // btn_logout
             // 

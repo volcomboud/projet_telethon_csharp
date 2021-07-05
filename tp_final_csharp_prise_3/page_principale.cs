@@ -702,5 +702,20 @@ namespace tp_final_csharp_prise_3
             presentation presentation_intro = new presentation();
             presentation_intro.Show();
         }
-    }
+       
+        private void mouseAqua(object sender, EventArgs e)
+        {
+            this.BackColor = System.Drawing.Color.Aqua;
+        }
+
+        private void mouseViolet(object sender, EventArgs e)
+        {
+            this.BackColor = System.Drawing.Color.BlueViolet;
+        }
+
+        private void MouseViolet(object sender, MouseEventArgs e)
+        {
+
+        }
+    }    
 }
